@@ -46,7 +46,7 @@ for i in range(2):
         x += 1
         ax.set_xticks([1, 2], virus_list)
         if i == 0:
-            ax.set_yticks(range(1, 7), ['5×10e7 vg', '1×10e8 vg', '5×10e8 vg', '1×10e9 vg', '5×10e9 vg', '5×10e10 vg'])
+            ax.set_yticks(range(1, 7), ['5×10e7 vg', '1×10e8 vg', '5×10e8 vg', '1×10e9 vg', '5×10e9 vg', '1×10e10 vg'])
         else:
             ax.set_yticks(range(1, 5), ['1×10e6 vg', '5×10e6 vg', '1×10e7 vg', '5×10e7 vg'])
         ax.set_xlim(0, 3)
