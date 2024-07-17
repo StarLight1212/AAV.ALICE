@@ -37,9 +37,9 @@ for _, key in enumerate(data.keys()):
     stderr[key] = dataframe_to_list(stderr[key], ref_index=ref)
     scatters[key] = dataframe_to_list(scatters[key], ref_index=ref)
 
-x = ['BALB-AAV9', 'BALB-seq3', 'BALB-seq11',
-     'C57-AAV9', 'C57-seq3', 'C57-seq11',
-     'FVB-AAV9', 'FVB-seq3', 'FVB-seq11']
+x = ['BALB-AAV9', 'BALB-ALICE_N2', 'BALB-ALICE_N6',
+     'C57-AAV9', 'C57-ALICE_N2', 'C57-ALICE_N6',
+     'FVB-AAV9', 'FVB-ALICE_N2', 'FVB-ALICE_N6']
 
 # define the mice strains(FVB or C57 or BALB)
 mice = 'FVB'
