@@ -10,7 +10,7 @@ def data_to_dict(file_name, sheet_name, mode, *args):
     :param mode: C/T/L
     :param file_name:
     :param sheet_name:
-    :return: {AAV9:[Rfp,Dapi], seq3:[Rfp,Dapi], seq11:[Rfp,Dapi]}
+    :return: {AAV9:[Rfp,Dapi], ALICE_N2:[Rfp,Dapi], ALICE_N6:[Rfp,Dapi]}
     """
     data = pd.read_excel(file_name, sheet_name=sheet_name)
     virus_data: Dict[Any, List[Any]] = dict()
@@ -79,7 +79,7 @@ if __name__ == '__main__':
     y3 = []
     # C
     fig, ax = plt.subplots()
-    virus = ['AAV9', 'seq3', 'seq11']
+    virus = ['AAV9', 'ALICE_N2', 'ALICE_N6']
     colors = ['#E7EAE9', '#C094B5', '#B5E0F6']
     ecolors = ['#8F8F8F', '#7A5568', '#3288AC']
     pcolors = ['#C2C2C2', '#956281', '#33AEDB']
