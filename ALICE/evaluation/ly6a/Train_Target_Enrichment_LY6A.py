@@ -71,11 +71,11 @@ if __name__ == '__main__':
             , AdaBoostRegressor(),XGBRegressor(max_depth=7, n_estimators=200, learning_rate=0.1, use_label_encoder=False,
                              objective="rank:pairwise")
               ]
-    output_file = '../../../input/Property_Evaluation/Train/LY6A/'
+    output_file = '../../input/Property_Evaluation/Train/LY6A/'
     if not os.path.exists(output_file): os.makedirs(output_file)
-    checkpoint_dir_D = '../../../checkpoint/Property_Evaluation/train/LY6A/'
+    checkpoint_dir_D = '../../checkpoint/Property_Evaluation/train/LY6A/'
     if not os.path.exists(checkpoint_dir_D): os.makedirs(checkpoint_dir_D)
-    path = '../../../input/Property_Evaluation/Train/LY6A_desc_feature.csv'
+    path = '../../input/Property_Evaluation/Train/LY6A_desc_feature.csv'
     kf = KFold(5, shuffle=True,random_state=42)
     train_data = pd.read_csv(path, encoding="utf8", index_col=0)
     x, y = train_data.iloc[:, 1:-1].values, train_data['LY6A_log2enr'].values
