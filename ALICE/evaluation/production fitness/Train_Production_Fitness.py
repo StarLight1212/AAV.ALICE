@@ -70,11 +70,11 @@ if __name__ == '__main__':
               GradientBoostingRegressor(n_estimators=500,learning_rate=0.1,max_depth=15,max_features='sqrt',min_samples_leaf=10,min_samples_split=10,loss='ls',random_state =42)
             , AdaBoostRegressor(),XGBRegressor(max_depth=7, n_estimators=200, learning_rate=0.1, use_label_encoder=False,
                              objective="rank:pairwise")]
-    output_file = '../../../input/Property_Evaluation/Train/Prod_Fit/'
+    output_file = '../../input/Property_Evaluation/Train/Prod_Fit/'
     if not os.path.exists(output_file): os.makedirs(output_file)
-    checkpoint_dir_D = '../../../checkpoint/Property_Evaluation/train/Prod_Fit/'
+    checkpoint_dir_D = '../../checkpoint/Property_Evaluation/train/Prod_Fit/'
     if not os.path.exists(checkpoint_dir_D): os.makedirs(checkpoint_dir_D)
-    path = '../../../input/Property_Evaluation/Train/Prod_Fit_desc_feature.csv'
+    path = '../../input/Property_Evaluation/Train/Prod_Fit_desc_feature.csv'
     kf = KFold(5, shuffle=True,random_state=42)
     train_data = pd.read_csv(path, encoding="utf8", index_col=0)
     x, y = train_data.iloc[:, 1:-1].values, train_data['Prod_Fit'].values
