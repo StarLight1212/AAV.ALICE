@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from DataLoader import read_excel_data
 
-protein_list = ['Slcoc1-mus', 'Car4', 'ly6c1', 'ly6A', '293T']
+protein_list = ['Slcoc1', 'Car4', 'ly6c1', 'ly6A', '293T']
 data = read_excel_data(file_path='data0104.xlsx',
                        protein_list=protein_list,
-                       virus_list=['AAV9', 'PHP.eB', 'S3', 'S11'])
+                       virus_list=['AAV9', 'PHP.eB', 'ALICE_N2', 'ALICE_N6'])
 ave_area = data[0]
 print(ave_area)
 bri_ness = data[1]
@@ -39,7 +39,7 @@ for i, size in enumerate(ave_area):
 ax.set_ylim(0, 5.2)
 ax.set_xlim(0, 4)
 ax.grid(True, zorder=0, c='grey', alpha=0.4, axis='both')
-plt.xticks(x, ['AAV9', 'PHP.eB', 'S3', 'S11'])
+plt.xticks(x, ['AAV9', 'PHP.eB', 'ALICE_N2', 'ALICE_N6'])
 plt.yticks([0.5, 1.5, 2.5, 3.5, 4.5], protein_list)
 norm = plt.Normalize(vmin=0, vmax=12)
 sm = plt.cm.ScalarMappable(cmap='RdYlBu_r', norm=norm)
