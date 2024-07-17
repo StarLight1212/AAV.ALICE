@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from DataLoader import read_excel_data
 
-protein_list = ['Slcoc1', 'Car4', 'ly6c1', 'ly6A', '293T']
+protein_list = ['Slco1c1', 'Car4', 'ly6c1', 'ly6A', '293T']
 data = read_excel_data(file_path='data0104.xlsx',
                        protein_list=protein_list,
                        virus_list=['AAV9', 'PHP.eB', 'ALICE_N2', 'ALICE_N6'])
