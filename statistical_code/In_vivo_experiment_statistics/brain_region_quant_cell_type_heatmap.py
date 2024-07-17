@@ -48,9 +48,9 @@ if __name__ == '__main__':
     dict3 = read_excel_data(path[2])
 
     # prepare the maxtrix
-    x = ['BALB-AAV9', 'BALB-seq3', 'BALB-seq11',
-         'C57-AAV9', 'C57-seq3', 'C57-seq11',
-         'FVB-AAV9', 'FVB-seq3', 'FVB-seq11']
+    x = ['BALB-AAV9', 'BALB-ALICE_N2', 'BALB-ALICE_N6',
+         'C57-AAV9', 'C57-ALICE_N2', 'C57-ALICE_N6',
+         'FVB-AAV9', 'FVB-ALICE_N2', 'FVB-ALICE_N6']
     y = ['Cerebral Cortex', 'Hippocampus', 'Striatum', 'Thalamus', 'ventral Midbrain', 'Cerebellum']
     m1 = dict_to_matrix(source_data=dict1, row=x, column=y)
     m2 = dict_to_matrix(source_data=dict2, row=x, column=y)
