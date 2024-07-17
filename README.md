@@ -37,8 +37,9 @@
 
 **News:**    
 ```yaml
+Key Innovations
+```
 ALICE (AI-driven Ligand-Informed Capsid Engineering) represents a groundbreaking approach to AAV capsid engineering, offering several key innovations:
-```  
 - [x] 1. Direct in silico design of multifunctional capsids: ALICE achieves direct computational engineering of AAV capsids with multiple functions, independent of in vivo selection processes. While AI has been used to construct capsid libraries with enhanced fitness or diversity, previous approaches still relied on unpredictable in vivo selection. ALICE pioneers the direct in silico design of multifunctional capsids, potentially accelerating AAV-based gene therapy development more efficiently.
 - [x] 2. Function-guided evolutionary approach: ALICE overcomes the challenge of fusing multiple functions into a single sequence, a limitation often faced by conventional generative language models. By employing a novel function-guided evolutionary approach, ALICE successfully integrates multiple functions into a single capsid sequence, bridging the gap in AI-driven design of multifunctional AAV capsids and providing insights for other multifunctional protein complexes.
 - [x] 3. Interpretable computational mapping of capsid sequence to function: ALICE demonstrates an interpretable approach to mapping capsid sequences to multiple functions. By illustrating multi-level relationships between capsid sequences and functions, ALICE enables knowledge-driven AAV design. This approach offers insights into the interpretability, controllability, and safety of viral capsid protein engineering, addressing crucial bio-security concerns in the field.
