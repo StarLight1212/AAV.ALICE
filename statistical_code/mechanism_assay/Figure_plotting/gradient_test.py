@@ -3,7 +3,7 @@ from DataLoader import groupby_average
 import numpy as np
 
 ratio, area = groupby_average(groups=['protein', 'virus', 'group'],
-                              filepath=r'.\data_mechaniam_0114_0620-quant.xlsx',
+                              filepath=r'.\data_mechaniam-quant.xlsx',
                               target=['AVERAGE_SIG_AREA', 'AVERAGE_TO_SIG_AREA'])
 
 area_data = [area[area.protein == 'NONE'], area[area.protein == 'LY6A']]
