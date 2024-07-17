@@ -18,7 +18,7 @@ x_index = np.array([1, 5.5, 10])
 fig = plt.figure(figsize=(9, 4))
 ax = plt.subplot(111)
 mice = ['balb', 'C57', 'FVB']
-virus = ['AAV9', 'seq3', 'seq11']
+virus = ['AAV9', 'ALICE_N2', 'ALICE_N6']
 colors = ['#E7EAE9', '#C094B5', '#B5E0F6']
 pcolors = ['#C2C2C2', '#956281', '#33AEDB']
 ecolors = ['#8F8F8F', '#7A5568', '#3288AC']
@@ -35,9 +35,9 @@ for i, v in enumerate(virus):
 # scatter
 x_index -= 3
 bias = 0.2
-x = ['BALB-AAV9', 'BALB-seq3', 'BALB-seq11',
-     'C57-AAV9', 'C57-seq3', 'C57-seq11',
-     'FVB-AAV9', 'FVB-seq3', 'FVB-seq11']
+x = ['BALB-AAV9', 'BALB-ALICE_N2', 'BALB-ALICE_N6',
+     'C57-AAV9', 'C57-ALICE_N2', 'C57-ALICE_N6',
+     'FVB-AAV9', 'FVB-ALICE_N2', 'FVB-ALICE_N6']
 for i, key in enumerate(x_index):
     scatter_data = [scatter.loc[(m, virus[i])] for m in mice]
     for j, val in enumerate(x_index):
