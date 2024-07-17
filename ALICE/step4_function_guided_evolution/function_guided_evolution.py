@@ -16,8 +16,7 @@ parser_ = argparse.ArgumentParser(description="Train GAN")
 # bert, roberta
 parser_.add_argument("--group_type", type=str, default='EDG',
                      choices=['SA', 'GA', 'EDA', 'EDG', 'NONE'])
-parser_.add_argument("--seq_num", type=int,
-                     default=10000, )
+
 
 parser_.add_argument("--gan_date", type=str,
                      default='20230506', )
@@ -39,7 +38,7 @@ pregan_date = args.pregan_date
 pretrain_model = args.pretrain_model
 
 group_type = args.group_type
-seq_num = args.seq_num
+
 
 # different groups of 20 individuals of length 10
 if group_type == 'GA':
@@ -60,6 +59,7 @@ filepath = '../input/FE/infer_gen_seqs.csv'
 
 
 df = pd.read_csv(filepath)
+seq_num = len(df)
 seq_lengths = df['seq'].apply(len)
 result_dict = {}
 grouped = df.groupby(seq_lengths)
