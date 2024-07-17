@@ -28,17 +28,17 @@ def train_and_eval(seqs_desc, seqs, output_pth, models):
 
 if __name__ == '__main__':
 
-    target_model = pickle.load(file=open('../../../checkpoint/Property_Evaluation/inference/LY6A_model.sav', 'rb'))
+    target_model = pickle.load(file=open('../../checkpoint/Property_Evaluation/inference/LY6A_model.sav', 'rb'))
     ranking_model_name = 'LY6A_model'
 
     models = [
         target_model,
     ]
-    path = '../../../input/Property_Evaluation/inference/'
+    path = '../../input/Property_Evaluation/inference/'
     total_gen_seq = pd.read_csv(path+'Top8.csv')
     pickle.dump(total_gen_seq, file=open(path + 'tar_seq.pkl', 'wb'), protocol=0)
     seqs = pickle.load(file=open(path + 'tar_seq.pkl', 'rb'))
     seq_desc = [parameters.cal_pep(seq) for seq in seqs['AA_sequence'].tolist()]# seq_num x 254
     seqs = seqs['AA_sequence'].tolist()
-    output_pth = '../../../output/Property_Evaluation/'
+    output_pth = '../../output/Property_Evaluation/'
     train_and_eval(seq_desc, seqs, output_pth, models)
