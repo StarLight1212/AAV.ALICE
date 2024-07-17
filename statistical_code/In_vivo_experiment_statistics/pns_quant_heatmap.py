@@ -45,14 +45,14 @@ if __name__ == '__main__':
     dict1 = read_excel_data(path)
     reference = ['liver', 'muscle', 'heart', 'kidney', 'lung', 'spleen', 'drg']
     matrix = dict_to_matrix(dict1, organs=reference,
-                            virus=['AAV9', 'seq3', 'seq11'],
+                            virus=['AAV9', 'ALICE_N2', 'ALICE_N6'],
                             species=['balb', 'C57', 'FVB'])
     heatmap_data = pd.DataFrame(matrix, index=reference,
-                                columns=['AAV9_balb', 'seq3_balb', 'seq11_balb', 'AAV9_c57', 'seq3_c57', 'seq11_c57',
-                                         'AAV9_FVB', 'seq3_FVB', 'seq11_FVB'])
+                                columns=['AAV9_balb', 'ALICE_N2_balb', 'ALICE_N6_balb', 'AAV9_c57', 'ALICE_N2_c57', 'ALICE_N6_c57',
+                                         'AAV9_FVB', 'ALICE_N2_FVB', 'ALICE_N6_FVB'])
 
-    keys = ['AAV9_balb', 'seq3_balb', 'seq11_balb', 'AAV9_c57', 'seq3_c57', 'seq11_c57',
-            'AAV9_FVB', 'seq3_FVB', 'seq11_FVB']
+    keys = ['AAV9_balb', 'ALICE_N2_balb', 'ALICE_N6_balb', 'AAV9_c57', 'ALICE_N2_c57', 'ALICE_N6_c57',
+            'AAV9_FVB', 'ALICE_N2_FVB', 'ALICE_N6_FVB']
     for i in range(3):
         temp = heatmap_data[keys[i*3]]
         for j in range(3):
