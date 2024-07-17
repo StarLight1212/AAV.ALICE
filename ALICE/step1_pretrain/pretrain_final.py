@@ -20,7 +20,7 @@ class BERTTrainer:
     BERTTrainer make the pretrained BERT model with two LM training method.
 
         1. Masked Language Model : 3.3.1 Task #1: Masked LM
-        2. Next Sentence prediction : 3.3.2 Task #2: Next Sentence Prediction
+        2. Next Sentence prediction : 3.3.2 Task #2: Next Sentence Prediction (Deprecation in RoBERTa)
 
     please check the details on README.md with simple example.
 
@@ -212,8 +212,8 @@ if __name__ == '__main__':
     with open('./msk_roberta_record.txt', 'a+') as f:
         f.write(str(param)+'\n')
     f.close()
-    trn_dataset = AASeqLoader('../../data/MLM_data_pack_trn_uniprot.npy')
-    tst_dataset = AASeqLoader('../../data/MLM_data_pack_tst_uniprot.npy')
+    trn_dataset = AASeqLoader('../../pre_train_data/MLM_data_pack_trn_uniprot.npy')
+    tst_dataset = AASeqLoader('../../pre_train_data/MLM_data_pack_tst_uniprot.npy')
     trn_dataloader = DataLoader(trn_dataset, batch_size=bz)
     tst_dataloader = DataLoader(tst_dataset, batch_size=bz)
     mini_bert = BERT(param)
@@ -221,7 +221,7 @@ if __name__ == '__main__':
         train_pro = BERTTrainer(mini_bert, param, trn_dataloader, tst_dataloader)
         for epoch in range(50):
             train_pro.train(epoch=epoch)
-            train_pro.save(epoch, file_path='./model/v0421/')
+            train_pro.save(epoch, file_path='./model/')
         else:
-            train_pro.save(epoch, file_path='./model/v0421/')
+            train_pro.save(epoch, file_path='./model/')
         train_pro.test(epoch=1)
