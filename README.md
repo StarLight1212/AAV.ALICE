@@ -105,6 +105,9 @@ This module is applied to predict (train and inference) the binding ability of L
 
 Each module in this pipeline builds upon the previous one, creating a comprehensive framework for designing and optimizing AAV capsid sequences with desired functional properties. The FE module serves as a critical component for fusing and generating the capsid sequences with multiple functions throughout the process.
 
+### Statistics in Wet-lab (directory: statistical_code)
+The statistics and analysis codes for both in vivo experiments and mechanism assays are compiled in this collection.
+
 ## License  
 This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, and scientific publications. Permission is granted to use ALICE given that you agree to my licensing terms. Regarding the request for commercial use, please contact us via email to help you obtain the authorization letter.  
 
