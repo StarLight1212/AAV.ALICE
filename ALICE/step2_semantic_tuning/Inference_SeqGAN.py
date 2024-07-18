@@ -1,6 +1,6 @@
 '''
 date: 20230506
-author: Alex Zheng
+author: Alex, Elixir
 project: using roberta to generate aav sequence
 '''
 
