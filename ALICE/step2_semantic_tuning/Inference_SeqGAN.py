@@ -30,7 +30,7 @@ def generate_samples(G_vs_model, output_file, start_end):
         seqlst.append(seq)
 
     df = pd.concat([pd.DataFrame(seqlst,columns=['seq'])], axis=1)
-    df.to_csv(output_file + 'infer_gen_seqs.csv', encoding="utf8")
+    df.to_csv(output_file + 'infer_gen_seqs.csv', encoding="utf8", index=False)
 
 if __name__ == '__main__':
     GAN_Infer_param = tools.parameters.GAN_Infer
