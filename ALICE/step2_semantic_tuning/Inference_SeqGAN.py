@@ -1,6 +1,6 @@
 '''
 date: 20230506
-author: Alex
+author: Alex Zheng
 project: using roberta to generate aav sequence
 '''
 
