@@ -1,6 +1,6 @@
 '''
 date: 20230418
-author: Alex Zheng
+author: Alex, Elixir
 project: Training roberta to generate aav sequence
 
 '''
@@ -33,10 +33,6 @@ def one_hot_train(y, num_columns):
         y_cat[i, range(y.shape[1]), sig] = 1.0
 
     return Variable(FloatTensor(y_cat)).cuda()
-
-
-
-
 
 
 def train_and_eval(bert: BERT, vs_G_datapack, vs_G_datapack_TEST, start_end, GAN_param, Pretrain_param, columns, aa_list):
