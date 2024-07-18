@@ -6,8 +6,4 @@ df = df.sort_values(by='Target_LY6C1_Enri', ascending=False).reset_index(drop=Tr
 
 df = df[df['multi_tar'] >= -1]
 
-
-
-
 df.to_csv('../output/EA/multi_tar_TOP.csv', index=False)
-
