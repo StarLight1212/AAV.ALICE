@@ -4,15 +4,12 @@ author: Alex Zheng
 project: using roberta to generate aav sequence
 '''
 
-
 import pandas as pd
 import tools.parameters
 import pandas as pd
 import os
 import torch
 import numpy as np
-
-
 
 def generate_samples(G_vs_model, output_file, start_end):
     samples = []
