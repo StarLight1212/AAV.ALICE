@@ -93,7 +93,8 @@ This module evolves and fuses multiple functions into the capsid sequences using
 This module selects the best capsid sequences with multiple desired functions for in vivo testing. It represents the final stage of the computational pipeline before experimental validation.
 > [Elite Ascendancy](https://github.com/StarLight1212/AAV.ALICE/tree/main/ALICE/step5_elite_ascendancy)
 #### Key components:
-- [x] Ensemble scoring methods (EA Score)
+- [x] Evaluate the sequence's production fitness and binding affinity to the targets Ly6a and Ly6c1.
+- [x] Elite Ascendancy Score Calculation (EA Score)
 - [x] Output generation of elite sequences for testing
 
 ### Evaluation (directory: evaluation)
@@ -102,7 +103,6 @@ This module is applied to predict (train and inference) the binding ability of L
 #### Key components:
 - [x] Model architectures for binding and fitness prediction
 - [x] Training pipelines for each prediction task
-- [x] Inference scripts for applying trained models
 
 Each module in this pipeline builds upon the previous one, creating a comprehensive framework for designing and optimizing AAV capsid sequences with desired functional properties. The FE module serves as a critical component for fusing and generating the capsid sequences with multiple functions throughout the process.
 
