@@ -13,7 +13,8 @@ df['filter_score'] = 0.3*df['Prod_Fit']+0.35*df['Target_LY6A_Enri']+0.35*df['Tar
 df = df.sort_values(by='filter_score', ascending=False).head(1000)
 
 
-df.to_csv('../output/RankFiltPro/ROBERTA_Total_seq_Top1000.csv')
+df.to_csv('../output/RankFiltPro/ROBERTA_Total_seq_Top1000.csv', index=False)
+
 
 
 
