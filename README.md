@@ -5,9 +5,13 @@
 
 ## Note
 🔗To replicate the sequence screening outcomes detailed in our paper, please follow these steps: 
+
 📥First, download the pertinent data from Google Drive. 
+
 📁Next, navigate to the "step5_elite_ascendancy" folder within the ALICE project directory. 
+
 ☺️Execute the scripts sequentially, numbered from 1 to 8, to acquire the eight sequences featured in the study for subsequent wet-lab validation. 
+
 Should you encounter any inquiries or challenges, feel free to post a message in the issue section; we are committed to providing a prompt response.
 
 ## Required python packages
