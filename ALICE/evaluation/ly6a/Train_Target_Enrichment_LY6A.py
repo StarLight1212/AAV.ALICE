@@ -1,5 +1,5 @@
 """
-author: Alex Zheng
+author: Alex, Elixir
 date: 20230328
 """
 import os
@@ -60,7 +60,7 @@ def train_and_eval(x, y, trn_data, tst_data, model_name, models):
 
 
 if __name__ == '__main__':
-    date = "20240615"
+    date = "20230615"
     model_name = ['KNeighborsRegressor','SVR','BayesianRidge', 'RandomForestRegressor',
                   'GradientBoostingRegressor', 'AdaBoostRegressor', 'XGBRegressor']
     models = [KNeighborsRegressor(n_neighbors=5, weights='uniform'),
