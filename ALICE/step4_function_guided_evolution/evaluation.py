@@ -64,7 +64,7 @@ class MSAEva(EvaMethod):
         self.scorebound = (-1, 1)
 
         # default parameter
-        self.loadSample('seq_LY6A_LY6C1_20240617.json')
+        self.loadSample('seq_LY6A_LY6C1.json')
         self.loadMatrix('BLOSSUM62.txt')
 
     def setGap(self, gap: float):
