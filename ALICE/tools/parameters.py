@@ -5,7 +5,6 @@ from featured_data_generated import (
 )
 
 
-
 # Helper class for dictionary-like object creation
 class Bunch(dict):
     def __init__(self, *args, **kwargs):
@@ -104,7 +103,7 @@ GAN = Bunch(
 
 GAN_Infer = Bunch(
     train_date='20230506',
-    date='20240617',
+    date='20230617',
     model_name='SeqGAN',
     pretrain_model='roberta',
     n_epochs=1,
@@ -112,7 +111,7 @@ GAN_Infer = Bunch(
 
 GAN_Infer_noPre = Bunch(
     train_date='20230506',
-    date='20240617',
+    date='20230617',
     model_name='SeqGAN',
     n_epochs=9,
 )
@@ -130,7 +129,7 @@ date = '20230515'
 
 # RA configuration
 RA = Bunch(
-    date='20240625',
+    date='20230625',
     RA_model=['SA', 'GA', 'EDA', 'EDG', 'NONE'],
 )
 
