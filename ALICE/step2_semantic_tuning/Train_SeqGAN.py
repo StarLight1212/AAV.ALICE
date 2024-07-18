@@ -1,6 +1,6 @@
 '''
 date: 20230418
-author: Alex
+author: Alex Zheng
 project: Training roberta to generate aav sequence
 
 '''
