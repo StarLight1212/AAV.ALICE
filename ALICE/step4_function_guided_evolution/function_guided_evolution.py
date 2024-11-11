@@ -10,7 +10,7 @@ import SA
 import argparse
 import pandas as pd
 import math
-from metric import parameters
+import parameters
 
 parser_ = argparse.ArgumentParser(description="Train GAN")
 # bert, roberta
